@@ -2,13 +2,13 @@
   <v-container>
     <v-row class="text-center">
       <v-col cols="12">
-        <v-img :src="logo" class="my-3" contain height="200"/>
+        <v-icon size="50px" icon="vscode-icons-file-type-vue" class=""></v-icon><v-icon class="" size="50px" icon="vscode-icons-file-type-vite"></v-icon><v-icon class="" size="50px" icon="logos-vuetifyjs"></v-icon>
       </v-col>
 
-      <v-col class="mb-4">
-        <v-icon :icon="mdiHome"></v-icon>
-        <h1 class="display-2 font-weight-bold mb-3 text-green">
-          Welcome to the Vuetify 3 Beta
+      <v-col class="align-center d-flex flex-column mb-4">
+        
+        <v-img class=" my-3" contain src="https://docs.pinegrow.com/wp-content/themes/pg_doc2018/gfx/pg_logo_new.svg" width="500"/><h1 class="display-2 font-weight-bold mb-3 text-deep-orange-lighten-2">
+          Welcome to Vue Designer
         </h1>
 
           <h4>Vite Preview</h4>

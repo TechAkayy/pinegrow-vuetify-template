@@ -8,8 +8,11 @@ import { aliases, mdi } from "vuetify/iconsets/mdi-svg";
 
 export default createVuetify({
 	icons: {
-		defaultSet: 'mdi',
-		aliases,
+		defaultSet: 'class',
+		aliases: Object.keys(aliases).reduce((obj, key) => {
+        obj[key] = `${aliases[key]}`
+        return obj
+    }, {}),
 		sets: {
 			mdi
 		}

@@ -17,10 +17,13 @@
     "webfontloader": "^1.0.0"
   },
   "devDependencies": {
+    "@iconify/json": "^2.1.65",
     "@mdi/js": "^6.7.96",
     "@pinegrow/vite-plugin": "^2.0.0-alpha.1",
     "@pinegrow/vuetify-plugin": "^3.0.0-alpha.6",
+    "@unocss/preset-icons": "^0.39.3",
     "@vitejs/plugin-vue": "^2.3.3",
+    "unocss": "^0.39.3",
     "vite": "^2.9.12",
     "vite-plugin-vuetify": "^1.0.0-alpha.0",
     "vue-cli-plugin-vuetify": "~2.5.1"
