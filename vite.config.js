@@ -9,13 +9,14 @@ import { liveDesigner } from '@pinegrow/vite-plugin'
 import { pinegrowVuetifyPlugin } from "@pinegrow/vuetify-plugin";
 import Unocss from 'unocss/vite'
 import presetIcons from '@unocss/preset-icons'
+import Components from 'unplugin-vue-components/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
 	plugins: [
 		liveDesigner({
-      plugins: [pinegrowVuetifyPlugin],
-      iconsets: ['all']
+			plugins: [pinegrowVuetifyPlugin],
+			iconsets: ['all']
 		}),
 		vue(),
 		Unocss({
@@ -25,7 +26,10 @@ export default defineConfig({
 				})
 			]
 		}),
-		vuetify({ autoImport: true })
+		vuetify({ autoImport: true }),
+		Components({
+			dirs: ['src/components']
+		})
 	],
 	resolve: {
 		alias: {
