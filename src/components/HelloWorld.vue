@@ -7,7 +7,7 @@
 
       <v-col class="mb-4">
         <v-icon :icon="mdiHome"></v-icon>
-        <h1 class="display-2 font-weight-bold mb-3">
+        <h1 class="display-2 font-weight-bold mb-3 text-green">
           Welcome to the Vuetify 3 Beta
         </h1>
 
