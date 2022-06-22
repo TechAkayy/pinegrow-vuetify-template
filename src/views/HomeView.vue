@@ -1,3 +1,5 @@
 <template>
-  <div><HelloWorld/></div>
+	<div>
+		<HelloWorld />
+	</div>
 </template>
