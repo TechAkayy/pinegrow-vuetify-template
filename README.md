@@ -1,6 +1,8 @@
 # pinegrow-vuetify-template
 
-This template should help get you started developing with Vue 3 in Vite.
+This template can be used to create a Vue 3 + Vite app that can be visually designed with Pinegrow Vue Designer.
+
+Vue 3 + Vite 2 + Vuetify 3 + Vue Router 4 + Pinia 2
 
 ## Recommended IDE Setup
 
@@ -20,6 +22,23 @@ npm install
 
 ```sh
 npm run dev
+```
+
+To use vue-devtools electron app during development,
+
+1. Add the following code to the top of main.js
+
+```javascript
+import devtools from '@vue/devtools'
+if (process.env.NODE_ENV === 'development') {
+	devtools.connect(/* host, port */)
+}
+```
+
+2. Run this command in a secondary terminal/console instance
+
+```sh
+npm run vue-devtools
 ```
 
 ### Compile and Minify for Production
