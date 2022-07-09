@@ -1,10 +1,8 @@
 import { fileURLToPath, URL } from 'url'
 
 import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-
-// https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vite-plugin
-import vuetify from 'vite-plugin-vuetify'
+import Vue from '@vitejs/plugin-vue'
+import Vuetify from 'vite-plugin-vuetify'
 import { liveDesigner } from '@pinegrow/vite-plugin'
 import { pinegrowVuetifyPlugin } from '@pinegrow/vuetify-plugin'
 import Unocss from 'unocss/vite'
@@ -15,11 +13,19 @@ import AutoImport from 'unplugin-auto-import/vite'
 // https://vitejs.dev/config/
 export default defineConfig({
 	plugins: [
+		// http://pinegrow.com/docs/vue-designer
 		liveDesigner({
 			plugins: [pinegrowVuetifyPlugin],
 			iconsets: ['all']
 		}),
-		vue(),
+
+		// https://github.com/vitejs/vite/tree/main/packages/plugin-vue
+		Vue(),
+
+		// https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vite-plugin
+		Vuetify({ autoImport: true }),
+
+		// https://github.com/unocss/unocss/tree/main/packages/preset-icons
 		Unocss({
 			presets: [
 				presetIcons({
@@ -27,7 +33,8 @@ export default defineConfig({
 				})
 			]
 		}),
-		vuetify({ autoImport: true }),
+
+		// https://github.com/antfu/unplugin-vue-components
 		Components({
 			dirs: ['src/components']
 		}),
@@ -104,6 +111,8 @@ export default defineConfig({
 			// }
 		})
 	],
+
+	// https://vitejs.dev/config/#resolve-alias
 	resolve: {
 		alias: {
 			'@': fileURLToPath(new URL('./src', import.meta.url))
