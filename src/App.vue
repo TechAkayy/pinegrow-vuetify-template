@@ -1,5 +1,4 @@
 <script setup>
-
 // https://github.com/vueuse/head
 // you can use this to manipulate the document head in any components,
 useHead({
@@ -22,3 +21,5 @@ useHead({
   </v-app>
 </template>
 
+<style scoped>
+</style>
