@@ -1,12 +1,13 @@
 <script setup>
-// https://github.com/vueuse/head
-// you can use this to manipulate the document head in any components,
-useHead({
-  title: 'Pinegrow Vuetify Template',
-  meta: [
-    { name: 'description', content: 'Visually design your vite-powered vuetify apps' },
-  ],
-})
+  // https://github.com/vueuse/head
+  // you can use this to manipulate the document head in any components,
+  useHead({
+    title: 'Pinegrow Vuetify Template',
+    meta: [
+      { name: 'description', content: 'Visually design your vite-powered vuetify apps' },
+    ],
+  })
+
 </script>
 
 <template>

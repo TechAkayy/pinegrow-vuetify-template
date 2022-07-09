@@ -1,9 +1,12 @@
 <script setup>
+  import { useCounterStore } from "@/stores/counter";
+  const counterStore = useCounterStore()
+  const { counter } = storeToRefs(counterStore)
 </script>
 
 <template>
   <div>
-    <h1>This is an about page</h1>
+    <h1>Pinia counter is: {{ counter }}</h1>
   </div>
 </template>
 
