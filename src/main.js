@@ -1,5 +1,8 @@
 // import devtools from '@vue/devtools'
-// if (process.env.NODE_ENV === 'development') {
+// if (
+// 	process.env.NODE_ENV === 'development' &&
+// 	document.location.ancestorOrigins.length
+// ) {
 // 	devtools.connect(/* host, port */)
 // }
 
