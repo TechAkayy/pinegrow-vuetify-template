@@ -16,7 +16,8 @@ export default defineConfig({
 		// http://pinegrow.com/docs/vue-designer
 		liveDesigner({
 			plugins: [pinegrowVuetifyPlugin],
-			iconsets: ['all']
+			iconsets: ['all'],
+			usingStandaloneVueDevtools: true
 		}),
 
 		// https://github.com/vitejs/vite/tree/main/packages/plugin-vue
